@@ -1,4 +1,6 @@
 
+
+
 require_relative 'bike_container.rb'
 
 class Van
@@ -10,7 +12,9 @@ class Van
     station.broken_bikes.each { |bike| bikes << station.release(bike)}
   end
 
-  
+  def release_broken(broken_bikes)
+   broken_bikes.each { |bike| garage << van.dock(bike)}
+  end
 
 
   
