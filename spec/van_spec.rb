@@ -36,7 +36,7 @@ require './lib/garage'
    end
    #it "should pick up the fixed bikes" do
    #end
-   it "should pick up fixed bikes from garage" do
+  it "should pick up fixed bikes from garage" do
     #van should pick up fixed bikes from the garage
     #bike.break
     garage.dock(bike)
@@ -46,7 +46,8 @@ require './lib/garage'
     expect(garage.available_bikes.count).to eq(0)
     expect(van.available_bikes.count).to eq(1)
   end
-    it "should drop fixed bikes to the station" do
+    
+  it "should drop fixed bikes to the station" do
       #van should release bikes to station
       #give the van a bike first
       van.dock(bike)
