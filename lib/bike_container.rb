@@ -18,9 +18,13 @@ module BikeContainer
     end
     def dock(bike)
       raise "You can fit no more bikes in" if full?
+      raise "You can only dock bikes!!" unless bike.is_a?(Bike)
       bikes << bike
     end
     def release(bike)
+      if bikes.empty? 
+        raise  "There are no bikes to release" 
+      end
       bikes.delete(bike)
     end
     def full?

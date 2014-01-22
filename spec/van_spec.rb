@@ -21,19 +21,23 @@ require './lib/garage'
       expect(van.bikes.length {|bike| bike.broken? }).to eq(1)
       expect(station.broken_bikes.count).to eq(0)
     end
-    it "drop broken bikes at garage" do
+
+   # DONE IN GARAGE CLASS/TEST 
+   #  it "drop broken bikes at garage" do
      
-    #van should release broken bikes to garage
-    bike.break
-    station.bikes << bike
-    # 2. a van should be able to pick it up from the station
-    van.collect_broken(station)
-    van.release_broken_to(garage)
-    #garage should have broken bikes
+   #  #van should release broken bikes to garage
+   #  bike.break
+   #  station.bikes << bike
+   #  # 2. a van should be able to pick it up from the station
+   #  van.collect_broken(station)
+   #  van.release_broken_to(garage)
+   #  #garage should have broken bikes
     
-    expect(van.broken_bikes.count).to eq(0)
-    expect(garage.broken_bikes.count).to eq(1)
-   end
+   #  expect(van.broken_bikes.count).to eq(0)
+   #  expect(garage.broken_bikes.count).to eq(1)
+   # end
+
+
    #it "should pick up the fixed bikes" do
    #end
   it "should pick up fixed bikes from garage" do

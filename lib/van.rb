@@ -12,12 +12,14 @@ class Van
     station.broken_bikes.each { |bike| bikes << station.release(bike)}
   end
 
-  def release_broken_to(garage)
-    broken_bikes.each do |bike|
-      release(bike)
-      garage.dock(bike)
-    end
-  end
+  # this is done in garage class
+  # def release_broken_to(garage)
+  #   broken_bikes.each do |bike|
+  #     release(bike)
+  #     garage.dock(bike)
+  #   end
+  # end
+  
   def collect_fixed_bikes(garage)
     garage.available_bikes.each do |bike|
       garage.release(bike)
