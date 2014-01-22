@@ -17,7 +17,7 @@ module BikeContainer
       bikes.count
     end
     def dock(bike)
-      raise "Station is full!!" if full?
+      raise "You can fit no more bikes in" if full?
       bikes << bike
     end
     def release(bike)
