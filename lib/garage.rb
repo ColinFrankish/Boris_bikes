@@ -22,7 +22,8 @@ class Garage
   end
 
 
-
+  # previous code used to fix the bikes, now done in one method so that
+  # the bikes are fixed as soon as they enter the garage. 
   # def fix_the_bike(broken_bikes)
   #   self.broken_bikes.each do |bike|
   #     bike.fix

@@ -85,19 +85,6 @@ require_relative '../lib/van'
   end
 
 
-    
-    
-
-
-
-
-
-
-
-
-
-
-
 
 
  end

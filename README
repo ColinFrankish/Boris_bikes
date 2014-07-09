@@ -1,1 +1,20 @@
-this is a sample Boris Bikes project
+This is a sample Boris Bikes project. 
+
+Overview. 
+
+Similar to the 'Boris Bikes' scheme used in London. 
+
+Aim is to devise Ruby classes to interact and control the distribution of bikes, getting them fixed when broken. 
+
+Bikes must be able to break and to be fixed in garages. 
+
+Bike docking stations must know when they are full and if there are any broken bikes in there. 
+
+Vans are used to collect broken bikes and take them to garages to be fixed, and fixed bikes must collected by the vans and taken to the docking stations. 
+
+There must be a capacity for the station,van and garage. 
+
+This project is using pure Ruby code, to practise using classes, methods etc. 
+
+This project is fully TDD driven using Rspec.
+
